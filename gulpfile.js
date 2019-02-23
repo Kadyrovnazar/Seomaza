@@ -1,11 +1,12 @@
 const { series, dest, parallel, src, watch } = require('gulp');
 const browsersync = require("browser-sync").create();
 const cssnano = require("gulp-cssnano");
-const sass = require('gulp-sass');
-sass.compiler = require('node-sass');
 const googleWebFonts = require('gulp-google-webfonts');
 const rename = require("gulp-rename");
 const autoprefixer = require("gulp-autoprefixer");
+
+const sass = require('gulp-sass');
+sass.compiler = require('node-sass');
 
 const del = require('del');
 
