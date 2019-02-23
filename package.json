@@ -4,14 +4,21 @@
   "description": "Education project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp runDev",
+    "build": "gulp build"
   },
   "author": "NK",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.0"
+    "@fortawesome/fontawesome-free": "^5.7.2",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-google-webfonts": "^2.1.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.11.0"
   },
   "dependencies": {
+    "node-normalize-scss": "^8.0.0",
     "react": "^16.8.2"
   }
 }
