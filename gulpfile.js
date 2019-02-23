@@ -7,7 +7,7 @@ const del = require('del');
 const clean = () => del(['dist']);
 
 const css = () => {
-  return src('./sass//*.scss')
+  return src('./sass/**/*.scss')
     .pipe(sass({
       includePaths: require('node-normalize-scss').includePaths
     }).on('error', sass.logError))
@@ -43,7 +43,7 @@ const fontawesome = () => {
 }
 
 const watchFiles = () => {
-  watch('./sass//*.scss', css);
+  watch('./sass/**/*.scss', css);
   watch('./images//*', images)
   watch('./templates/**/*.html', html)
 }
