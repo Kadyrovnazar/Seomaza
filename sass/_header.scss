@@ -1,7 +1,12 @@
 @import 'variables';
 @import 'mixin';
-$color:#ff6a40;
-.header-info {
-  background-color: $color;
 
+
+$color:#ff6a40;
+
+.header-info {
+  @include flexCenter;
+  background-color: $color;
+  height: 40px;
+  color: #fff;
 }
